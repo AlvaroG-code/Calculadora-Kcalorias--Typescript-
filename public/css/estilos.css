@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #dbdbdb;
+}
+ul {
+    width: 75%;
+    height: 100px;
+    padding: 5px;
+    margin: 10px auto 0px auto;
+    border: 5px solid #e4f2e7;
+    border-radius: 5px;
+    background-color: #2d3e40;
+}
+li {
+    color: #04bf9d;
+    font-family: "Inconsolata", sans-serif;
+}
+
+main {
+    margin: 50px auto 10px auto;
+    border: 5px solid #e4f2e7;
+    border-radius: 5px;
+    background-color: #fafafa;
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+
+select,
+option,
+input {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    color: #2d3e40;
+    padding: 5px;
+    border-radius: 5px;
+}
+button {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    background-color: #fd0c49;
+    color: white;
+    border: 2px solid #fd0c49;
+    border-radius: 5px;
+    margin-top: 17px;
+    height: 31px;
+}
+
+label {
+    color: #2d3e40;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#imgPerfil {
+    text-align: center;
+}
+#resultado {
+    padding-top: 20px;
+}
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    justify-items: stretch;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 510px;
+    margin: 25px auto 0px auto;
+}
+.item_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.item_form_med {
+    display: flex;
+    flex-direction: row;
+}
+.inputConMed {
+    border-radius: 5px 0px 0px 5px;
+    width: 200px;
+}
+.inputMed {
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
+    background-color: #ecebea;
+    width: 25px;
+}

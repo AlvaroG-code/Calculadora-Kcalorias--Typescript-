@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <title>Calculadora Kcalorias</title>
+        <link rel="stylesheet" href="./css/estilos.css" />
+        <title>Peso ideal</title>
+    <script defer src="./js/index.js"></script></head>
+    <body>
+        <main>
+            <header>
+                <div id="imgPerfil">
+                    <img src="./img/icono.png" alt="" height="75" />
+                </div>
+            </header>
+            <form class="formulario">
+                <div class="item_form">
+                    <label for="sexo">sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="1" selected>Mujer</option>
+                        <option value="2">Hombre</option>
+                    </select>
+                </div>
+                <div class="item_form">
+                    <label for="edad">edad</label>
+                    <input type="text" id="edad" />
+                </div>
+                <div class="item_form">
+                    <label for="altura">altura</label>
+                    <div class="item_form_med">
+                        <input type="text" id="altura" class="inputConMed" />
+                        <input
+                            type="text"
+                            id="alturaMed"
+                            class="inputMed"
+                            value="cm"
+                            disabled
+                        />
+                    </div>
+                </div>
+                <div class="item_form">
+                    <label for="peso">peso</label>
+                    <div class="item_form_med">
+                        <input type="text" id="peso" class="inputConMed" />
+                        <input
+                            type="text"
+                            id="pesoMed"
+                            class="inputMed"
+                            value="Kg"
+                            disabled
+                        />
+                    </div>
+                </div>
+                <div class="item_form">
+                    <label for="actividad">actividad</label>
+                    <select name="actividad" id="actividad">
+                        <option value="1" selected>Alta</option>
+                        <option value="2">Moderada</option>
+                        <option value="3">Baja</option>
+                    </select>
+                </div>
+                <div class="item_form">
+                    <label for="button"></label>
+                    <button id="botonCalculo">calcular</button>
+                </div>
+            </form>
+            <form class="formulario" id="resultado">
+                <div class="item_form">
+                    <label for="calMin">Kcal optimas min</label>
+                    <input type="text" id="calMin" disabled />
+                </div>
+                <div class="item_form">
+                    <label for="calMax">Kcal optimas max</label>
+                    <input type="text" id="calMax" disabled />
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
