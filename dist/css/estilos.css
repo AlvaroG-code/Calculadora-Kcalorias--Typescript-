@@ -87,3 +87,79 @@ label {
     background-color: #ecebea;
     width: 25px;
 }
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    ul {
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    main {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .item_form_med {
+        flex-direction: column;
+    }
+
+    .inputConMed {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .inputMed {
+        width: 100%;
+        border-radius: 5px;
+        border-left: 2px solid #ced4da;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .formulario {
+        width: 90%;
+        gap: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select,
+    option,
+    input {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
